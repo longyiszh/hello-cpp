@@ -1,6 +1,7 @@
-#include <iostream>
+
+void say(const char* message);
 
 int main()
 {
-	std::cout << "Hello World!" << std::endl;
+	say("Hello bonbon!");
 }
