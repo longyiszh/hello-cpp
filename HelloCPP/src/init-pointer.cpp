@@ -2,12 +2,14 @@
 #include <iostream>
 
 int crashProgramWithNullPointer();
-void allocateMemory();
+void allocateMemory(int& bytes);
 
 void initPointer() 
 {
 	//crashProgramWithNullPointer();
-	allocateMemory();
+	int byteSize{8};
+	int& byteSizeRef = byteSize;
+	allocateMemory(byteSizeRef);
 }
 
 int crashProgramWithNullPointer() {
@@ -17,12 +19,12 @@ int crashProgramWithNullPointer() {
 	return *nullPointer;
 }
 
-void allocateMemory() {
+void allocateMemory(int& byteSize) {
 	// char represents 1 byte
-	char* buffer = new char[8];
+	char* buffer = new char[byteSize];
 
 	// => Put a debugger in this line to see memory change
-	memset(buffer, 0, 8);
+	memset(buffer, 0, byteSize);
 
 	delete[] buffer;
 }
