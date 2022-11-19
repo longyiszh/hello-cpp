@@ -1,7 +1,8 @@
 
 void say(const char* message);
+void initPointer();
 
 int main()
 {
-	say("Hello bonbon!");
+	initPointer();
 }
