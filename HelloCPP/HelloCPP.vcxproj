@@ -135,6 +135,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\classing.cpp" />
     <ClCompile Include="src\init-pointer.cpp" />
     <ClCompile Include="src\playLogging.cpp" />
     <ClCompile Include="src\say.cpp" />
