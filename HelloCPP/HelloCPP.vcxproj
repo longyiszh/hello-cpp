@@ -140,6 +140,7 @@
     <ClCompile Include="src\playLogging.cpp" />
     <ClCompile Include="src\say.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\stringShape.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
