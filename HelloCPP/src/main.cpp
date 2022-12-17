@@ -12,8 +12,8 @@ int main()
 {
 	//initPointer();
 	//playLogging();
-	classing();
+	//classing();
 	//stringShape();
 	//contesto();
-	//ctorListIniter();
+	ctorListIniter();
 }
