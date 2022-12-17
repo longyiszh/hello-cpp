@@ -51,11 +51,15 @@ void makeGreet(IGreetable* greeter) {
 }
 
 void classing() {
+	// Using `new` to allocate on the Heap
+	// Note: Whenever possible, don't do this. Allocate on the Stack instead.
 	PlayerService* playerService = new PlayerService();
 	playerService->SetCurrentName("Wawoo");
 	playerService->SetCurrentAge(5);
 
 	std::cout << playerService->GetName() << std::endl;
 	makeGreet(playerService);
-	
+
+	// always call `delete` after `new` for now
+	delete playerService;
 }
