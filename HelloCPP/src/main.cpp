@@ -1,12 +1,13 @@
 
 // Linker is linking all of them
-void say(const char* message);
-void initPointer();
-void playLogging();
-void classing();
-void stringShape();
-void contesto();
-void ctorListIniter();
+//void say(const char* message);
+//void initPointer();
+//void playLogging();
+//void classing();
+//void stringShape();
+//void contesto();
+//void ctorListIniter();
+void vectorOps();
 
 int main()
 {
@@ -15,5 +16,6 @@ int main()
 	//classing();
 	//stringShape();
 	//contesto();
-	ctorListIniter();
+	//ctorListIniter();
+	vectorOps();
 }
