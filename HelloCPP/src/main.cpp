@@ -1,4 +1,3 @@
-
 // Linker is linking all of them
 //void say(const char* message);
 //void initPointer();
@@ -7,7 +6,9 @@
 //void stringShape();
 //void contesto();
 //void ctorListIniter();
-void vectorOps();
+//void vectorOps();
+void getAvg();
+
 
 int main()
 {
@@ -17,5 +18,6 @@ int main()
 	//stringShape();
 	//contesto();
 	//ctorListIniter();
-	vectorOps();
-}
+	//vectorOps();
+	getAvg();
+} 

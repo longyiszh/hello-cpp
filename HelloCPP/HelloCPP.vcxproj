@@ -140,6 +140,7 @@
     <ClCompile Include="src\classing.cpp" />
     <ClCompile Include="src\contesto.cpp" />
     <ClCompile Include="src\ctorListIniter.cpp" />
+    <ClCompile Include="src\getAvg.cpp" />
     <ClCompile Include="src\init-pointer.cpp" />
     <ClCompile Include="src\playLogging.cpp" />
     <ClCompile Include="src\say.cpp" />
