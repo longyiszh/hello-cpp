@@ -146,6 +146,7 @@
     <ClCompile Include="src\say.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\stringShape.cpp" />
+    <ClCompile Include="src\vectorDynamicArray.cpp" />
     <ClCompile Include="src\vectorOps.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
