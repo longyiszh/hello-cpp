@@ -2,22 +2,22 @@
 //void say(const char* message);
 //void initPointer();
 //void playLogging();
-//void classing();
+void classing();
 //void stringShape();
 //void contesto();
 //void ctorListIniter();
 //void vectorOps();
-void getAvg();
+//void getAvg();
 
 
 int main()
 {
 	//initPointer();
 	//playLogging();
-	//classing();
+	classing();
 	//stringShape();
 	//contesto();
 	//ctorListIniter();
 	//vectorOps();
-	getAvg();
+	//getAvg();
 } 

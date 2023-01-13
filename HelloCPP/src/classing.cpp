@@ -1,5 +1,6 @@
 #include <string>
 #include <iostream>
+#include <memory>
 
 class IGreetable {
 public:
@@ -62,4 +63,32 @@ void classing() {
 
 	// always call `delete` after `new` for now
 	delete playerService;
+
+	// smart pointers example
+	{
+		// scope 1
+		std::shared_ptr<PlayerService> sharedPlayerService;
+		std::weak_ptr<PlayerService> weakPlayerService;
+		{
+			// scope 2
+			std::unique_ptr<PlayerService> uniquePlayerService = std::make_unique<PlayerService>();
+			uniquePlayerService->SetCurrentAge(10);
+
+			std::shared_ptr<PlayerService> scopedSharedPlayerService = std::make_shared<PlayerService>();
+			sharedPlayerService = scopedSharedPlayerService;
+			weakPlayerService = scopedSharedPlayerService;
+		}
+		// At this point:
+		// memory of uniquePlayerService is gone!
+		// but memory of sharedPlayerService is still intact.
+		// -> sharedPlayerService will be gone when all references are gone.
+		// memory of weakPlayerService is gone!
+
+		std::cout << "sharedPlayerService useCount in scope 1: " << sharedPlayerService.use_count() << std::endl;
+		std::cout << "weakPlayerService expired: " << weakPlayerService.expired() << std::endl;
+
+	}
+
+	// At this point: 
+	// memory of sharedPlayerService is gone!
 }
