@@ -8,8 +8,9 @@
 //void ctorListIniter();
 //void vectorOps();
 //void getAvg();
-void vectorDynamicArray();
+//void vectorDynamicArray();
 //void oldSchoolStringCopy();
+void stasissor();
 
 
 int main()
@@ -22,6 +23,7 @@ int main()
 	//ctorListIniter();
 	//vectorOps();
 	//getAvg();
-	vectorDynamicArray();
+	//vectorDynamicArray();
 	//oldSchoolStringCopy();
+	stasissor();
 } 

@@ -146,6 +146,7 @@
     <ClCompile Include="src\playLogging.cpp" />
     <ClCompile Include="src\say.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\stasissor.cpp" />
     <ClCompile Include="src\stringShape.cpp" />
     <ClCompile Include="src\vectorDynamicArray.cpp" />
     <ClCompile Include="src\vectorOps.cpp" />
